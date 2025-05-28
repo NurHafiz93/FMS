@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TUGAS PRAKTIKUM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    form {
+      width: 60%;
+      margin: auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    fieldset {
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="file"],
+    input[type="color"],
+    input[type="range"] {
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .checkbox-group, .radio-group {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tag Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Invoice</th>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Total Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>INV001</td><td>Item A</td><td>2</td><td>100</td><td>200</td></tr>
+      <tr><td>2</td><td>INV002</td><td>Item B</td><td>3</td><td>100</td><td>300</td></tr>
+      <tr><td>3</td><td>INV003</td><td>Item C</td><td>1</td><td>150</td><td>150</td></tr>
+      <tr><td>4</td><td>INV004</td><td>Item D</td><td>2</td><td>100</td><td>200</td></tr>
+      <tr><td>5</td><td>INV005</td><td>Item E</td><td>2</td><td>150</td><td>300</td></tr>
+      <tr><td colspan="3"><strong>Total</strong></td><td>10</td><td></td><td>1150</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Tag Form Mahasiswa</h2>
+  <form>
+    <fieldset>
+      <legend>Data Mahasiswa</legend>
+      <div class="form-group">
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" value="1230145421">
+      </div>
+
+      <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Enter Name">
+      </div>
+
+      <div class="form-group">
+        <label for="tgl_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tgl_lahir" name="tgl_lahir">
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+
+      <div class="form-group">
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="jk" value="L"> Laki-laki</label>
+          <label><input type="radio" name="jk" value="P"> Perempuan</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="agama">Agama:</label>
+        <select name="agama" id="agama">
+          <option value="">-- Pilih Agama --</option>
+          <option>Islam</option>
+          <option>Kristen</option>
+          <option>Katolik</option>
+          <option>Hindu</option>
+          <option>Buddha</option>
+          <option>Konghucu</option>
+          <option>BTS</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Hobi:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="hobi" value="Balap Liar"> Balap Liar</label>
+          <label><input type="checkbox" name="hobi" value="Mancing"> Mancing</label>
+          <label><input type="checkbox" name="hobi" value="Mencari Dragon Ball"> Mencari Dragon Ball</label>
+          <label><input type="checkbox" name="hobi" value="Menemukan One Piece"> Menemukan One Piece</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="alamat">Alamat:</label>
+        <textarea name="alamat" id="alamat" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+      </div>
+
+      <div class="form-group">
+        <label for="warna">Warna:</label>
+        <input type="color" id="warna" name="warna">
+      </div>
+
+      <div class="form-group">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+      </div>
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+</body>
+</html>

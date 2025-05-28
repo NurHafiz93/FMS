@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TugasPortofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Yaldevi:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/forHaze.css">
+</head>
+<style>
+    
+body {
+    font-family: "Cambay";
+    background-color: black;
+    padding-top: 100px;
+}
+
+
+.headAll {
+    height: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    position: absolute;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.midHeader {
+    max-width: 1170px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.headSubMid {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.smallTitle {
+    margin-top: -20px;
+}
+
+
+.headMe h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.headMe {
+    margin-bottom: 20px;
+}
+
+.selfDesc {
+    margin-left: 100px;
+    margin-top: 50px;
+    color: white;
+}
+
+.descMe p {
+    font-size: 17px;
+    text-align: justify;
+    margin: 0;
+    margin-top: 3px;
+}
+
+.descMe {
+    margin-bottom: 60px;
+}
+
+.resultButton {
+    font-size: 15px;
+    font-weight: 600;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.resultButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.resultButton:active {
+    opacity: 0.7;
+}
+
+.selfPic {
+    margin-right: 95px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxProf {
+    background-color: rgb(203, 212, 219);
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 61px -2px rgba(190,181,232,0.6);
+    
+}
+
+.profPic {
+    border-radius: 50%;
+    max-width: 400px;
+}
+
+.contactMe {
+    background-color: white;
+    margin-top: 20px;
+    width: 250px;
+    height: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border: 2px solid white;
+    max-width: 250px;
+    max-height: 26px;
+
+}
+
+.waLogo {
+    padding-left: 10px;
+    width: 16px;
+}
+
+.instaLogo {
+    width: 16px;
+}
+
+.xLogo {
+    width: 16px;
+}
+
+.disLogo {
+    width: 16px;
+    padding-right: 20px;
+}
+
+
+.justSpace {
+    margin-bottom: 600px;
+}
+
+
+.magnumOpus {
+    font-family: "Yaldevi";
+    color: white;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.magnumOpus h2 {
+    font-weight: 700;
+}
+
+.magnumOpus p {
+    color: rgb(216, 216, 216);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: 210px 210px 210px;
+    
+}
+
+.tes {
+    width: 210px;
+    height: 336px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 0px 61px -2px rgba(190,181,232,0.6);
+}
+
+.tes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.contactMe {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 16px 0;
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contactItem img {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}
+
+.contactText {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+</style>
+
+
+<body>
+    <header class="headAll">
+        <div class="midHeader">
+            <div class="headSubMid">Home</div>
+            <div class="headSubMid">About</div>
+            <div class="headSubMid">Photos</div>
+            <div class="headSubMid">FundMe</div>
+        </div>
+    </header>
+    <div class="aboutMe">
+        <div class="selfDesc">
+            <div class="headMe">
+                <h1>Feez</h1>
+                <div class="smallTitle">
+                    <h1>MediaShoot</h1>
+                </div>   
+            </div>
+            <div class="descMe">
+                <p>My name Nur Hafiz Al Khair</p>
+                <p>I'm 19 Years old</p>
+                <p>I live in Perumnas Simalingkar, Medan</p>
+                <br>
+                <p>I'm photograper who mainly snapping</p>
+                <p>around automotive, people, and nature.</p>
+                <p>Can also edit your pic or image to look</p>
+                <p>cleaner and professional.</p>
+                <p>i also a bikers that love speed and touring</p>
+                <br>
+                <p>My Motto is </p>
+                <p>"If you're not a good shot today,</p>
+                <p>don't worry. There are other ways to be useful"</p>
+            </div>
+            <button class="resultButton">See my Result</button>
+
+            
+        </div>
+        <div class="selfPic">
+            <div class="boxProf">
+                <img class="profPic" src="FOR HTML/PSX_20230504_221650.jpg">
+            </div>
+            <div class="contactMe">
+    <div class="contactItem">
+        <img src="FOR HTML/whatsapp.png" alt="WhatsApp">
+        <span class="contactText">082360128996</span>
+    </div>
+    <div class="contactItem">
+        <img src="FOR HTML/social.png" alt="Instagram">
+        <span class="contactText">@n.hafis93 & @feezmediashoot</span>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <div class="justSpace"></div>
+
+    <div class="magnumOpus">
+        <p>presenting</p>
+        <h2>My Magnum Opus</h2>
+        <p>read description</p>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="tes">
+                <img src="FOR HTML/DSC_0008 (2).jpg">
+            </div>
+            <div class="tes">
+                <img src="FOR HTML/DSC_0058-1.jpg">
+            </div>
+            <div class="tes">
+                <img src="FOR HTML/DSC_0083.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="tes">
+                <img src="FOR HTML/DSC_0137 (1).jpg">
+            </div>
+            <div class="tes">
+                <img src="FOR HTML/DSC_0167 (1).jpg">
+            </div>
+            <div class="tes">
+                <img src="FOR HTML/DSC_0169 (1).jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="tes">
+                <img src="FOR HTML/DSC_0226.jpg">
+            </div>
+            <div class="tes">
+                <img src="FOR HTML/DSC_0233 (1).jpg">
+            </div>
+            <div class="tes">
+                <img src="FOR HTML/DSC_0482 (1).jpg">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

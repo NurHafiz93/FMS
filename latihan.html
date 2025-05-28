@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>LATIHAN PRAKTIKUM</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    table {
+      margin-bottom: 20px;
+      width: 50%;
+    }
+    input, select {
+      margin-bottom: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    <h2>Tag Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Invoice</th>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Total Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>INV001</td><td>Item A</td><td>2</td><td>100</td><td>200</td></tr>
+      <tr><td>2</td><td>INV002</td><td>Item B</td><td>1</td><td>150</td><td>200</td></tr>
+      <tr><td>3</td><td>INV003</td><td>Item C</td><td>1</td><td>150</td><td>150</td></tr>
+      <tr><td>4</td><td>INV004</td><td>Item D</td><td>2</td><td>100</td><td>200</td></tr>
+      <tr><td>5</td><td>INV005</td><td>Item E</td><td>2</td><td>150</td><td>300</td></tr>
+      <tr><td colspan="3"><strong>Total</strong></td><td>10</td><td></td><td>1150</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Tag Form</h2>
+  <form>
+    <label>NIM: <input type="text" name="nim" value="1230145421"></label>
+    <label>Nama: <input type="text" name="nama" placeholder="Enter Name"></label>
+    <label>Tanggal Lahir: <input type="date" name="tgl_lahir"></label>
+    <label>Username: <input type="text" name="username" placeholder="Enter Text"></label>
+    <label>Password: <input type="password" name="password"></label>
+
+    <label>Jenis Kelamin</label>
+    <label><input type="radio" name="jk" value="L"> Laki-laki</label>
+    <label><input type="radio" name="jk" value="P"> Perempuan</label>
+
+
+      <label>Agama: <select name="agama">
+          <option value="">-- Pilih Agama --</option>
+          <option>Islam</option>
+          <option>Kristen</option>
+          <option>Katolik</option>
+          <option>Buddha</option>
+          <option>Hindu</option>
+          <option>Konghucu</option>
+          <option>BTS</option></select></label>
+
+      <label>Hobi:</label>
+      <label><input type="checkbox" name="hobi" value="Balap Liar"> Balap Liar</label>
+      <label><input type="checkbox" name="hobi" value="Mancing"> Mancing</label>
+      <label><input type="checkbox" name="hobi" value="Gaming"> Gaming</label>
+      <label><input type="checkbox" name="hobi" value="Mencari Dragon Ball"> Mencari Dragon Ball</label>
+
+      <label>Alamat: <textarea name="alamat"></textarea></label>
+      <label>Upload File: <input type="file" name="file"></label>
+      <label>Warna: <input type="color" name="warna"></label>
+      <label>Volume: <input type="range" min="0" max="100" value="50"></label>
+  
+      <input type="submit" value="Submit">
+    </form>
+  
+  </body>
+  </html>
