@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Konversi Satuan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Satuan</h1>
+    
+    <div class="converter">
+      <label for="jenis">Jenis Konversi:</label>
+      <select id="jenis">
+        <option value="suhu">Suhu (C ↔ F)</option>
+        <option value="panjang">Panjang (m ↔ km)</option>
+        <option value="berat">Berat (g ↔ kg)</option>
+      </select>
+
+      <label for="nilai">Nilai:</label>
+      <input type="number" id="nilai" placeholder="Masukkan angka">
+
+      <label for="arah">Arah Konversi:</label>
+      <select id="arah">
+        <option value="1">Celsius → Fahrenheit</option>
+        <option value="2">Fahrenheit → Celsius</option>
+      </select>
+
+      <button onclick="konversi()">Konversi</button>
+
+      <p id="hasil"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
